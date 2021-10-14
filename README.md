@@ -19,8 +19,12 @@ These three parts were assembled in the final submission to provide an innovativ
 
 ## Evaluation
 
+<p align="center">
+  <img src="./img/evaluation.png">
+</p>
 
 ## Leaderboard
+
 <p align="center">
   <img src="./img/Score.png" width=50% height=50%>
 </p>
