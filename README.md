@@ -19,6 +19,8 @@ These three parts were assembled in the final submission to provide an innovativ
 
 ## Evaluation
 
+"The [Levenshtein distance](https://medium.com/@ethannam/understanding-the-levenshtein-distance-equation-for-beginners-c4285a5604f0) is a distance, in the mathematical sense of the term, giving a measure of the difference between two strings of characters. It is equal to the minimum number of characters that must be deleted, inserted or replaced to go from one string to the other".
+
 <p align="center">
   <img src="./img/evaluation.png">
 </p>
