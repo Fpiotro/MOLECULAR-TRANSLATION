@@ -5,12 +5,13 @@
 </p>
 
 This repository presents the solution developed during the **[BMS-Molecular-Translation competition](https://www.kaggle.com/c/bms-molecular-translation)**.
-This one is composed of three parts:
+This one is composed of four parts:
 * AutoEncoder
-* EncoderDecoder
 * Detector
+* EncoderDecoder
+* Initiator
 
-These three parts were assembled in the final submission to provide an innovative and original solution 👍
+These four parts were assembled in the final submission to provide an innovative and original solution 👍
 
 ## Objectives
 * Automated recognition of optical chemical structures 
