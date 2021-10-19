@@ -47,7 +47,14 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
 <p align="center">
   <img src="./img/Architecture_0.png">
    <p align="center">
-    Architecture of the model with the outputs associated to each branch.
+    Architecture of the model with the outputs associated to each branch. The final prediction is a combination of the three branches.
+  </p>
+</p>
+
+<p align="center">
+  <img src="./img/Architecture_1.png">
+   <p align="center">
+    Illustration of the Self-Supervised Learning part between the Initiator branch and the EncoderDecoder branch. The Initiator branch is voluntarily trained on a simplified problem in order to accustom the Resnet101 with images of molecules.
   </p>
 </p>
 
