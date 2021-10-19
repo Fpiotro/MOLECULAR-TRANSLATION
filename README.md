@@ -26,6 +26,14 @@ These four parts were assembled in the final submission to provide an innovative
   <img src="./img/evaluation.png">
 </p>
 
+## International Chemical Identifier Structure (InChI)
+
+InChI is a non-proprietary, Open Source, chemical identifier intended to be an IUPAC approved and endorsed structure standard representation.
+
+<p align="center">
+  <img src="./img/Structure.png">
+</p>
+
 ## Leaderboard
 
 <p align="center">
