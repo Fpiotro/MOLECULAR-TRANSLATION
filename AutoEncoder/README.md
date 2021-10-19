@@ -200,7 +200,7 @@ The U-Net network is simple – it's composed of `Down` and `Up` with `DoubleCon
 
 # Training
 
-Before you begin, make sure to save the required data files for training. To do this, run the contents of [`InChI_Label.py`](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/blob/main/InChI_Label.py).
+Before you begin, make sure to save the required data files for training. To do this, run the contents of [`InChI_Label.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/InChI_Label.py).
 
 See [`Trainer_AE.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/Trainer_AE.py).
 
