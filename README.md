@@ -13,6 +13,8 @@ This one is composed of four parts:
 
 These four parts were assembled in the final submission to provide an innovative and original solution 👍
 
+---
+
 ## Objectives
 * Automated recognition of optical chemical structures 
 * Convert images back to the underlying chemical structure (InChI text) 
@@ -63,3 +65,5 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
 <p align="center">
   <img src="./img/Score.png" width=50% height=50%>
 </p>
+
+---
