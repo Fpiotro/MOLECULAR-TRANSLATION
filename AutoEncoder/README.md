@@ -12,17 +12,17 @@ I'm using `PyTorch 1.7.1` in `Python 3.8.5`.
 
 # Contents
 
-[***Objective***](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/tree/main/AutoEncoder#objective)
+[***Objective***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#objective)
 
-[***Concepts***](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/tree/main/AutoEncoder#concepts)
+[***Concepts***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#concepts)
 
-[***Overview***](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/tree/main/AutoEncoder#overview)
+[***Overview***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#overview)
 
-[***Implementation***](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/tree/main/AutoEncoder#implementation)
+[***Implementation***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#implementation)
 
-[***Training***](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/tree/main/AutoEncoder#training)
+[***Training***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#training)
 
-[***Inference***](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/tree/main/AutoEncoder#inference)
+[***Inference***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#inference)
 
 # Objective
 
@@ -54,7 +54,7 @@ Here are some results generated on _test_ images not seen during training or val
 
 ---
 
-There are more examples at the [end of the tutorial](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/tree/main/AutoEncoder#some-more-examples).
+There are more examples at the [end of the tutorial](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#some-more-examples).
 
 ---
 
@@ -66,7 +66,7 @@ There are more examples at the [end of the tutorial](https://github.com/AntoineP
 
 # Overview
 
-In this section, we will present an overview of this model. If you're already familiar with it, you can skip straight to the [Implementation](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/tree/main/AutoEncoder#implementation) section or the commented code.
+In this section, we will present an overview of this model. If you're already familiar with it, you can skip straight to the [Implementation](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#implementation) section or the commented code.
 
 ### AutoEncoders
 
@@ -145,7 +145,7 @@ You'd need to download the [BMS-Molecular-Translation data](https://www.kaggle.c
 
 The synthetic images were made with the [RDKit library](https://www.rdkit.org/docs/Cookbook.html) of python.
 
-See [`preprocess_AE.py`](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/blob/main/AutoEncoder/preprocess_AE.py).
+See [`preprocess_AE.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/preprocess_AE.py).
 
 The objective of the autoencoder is to transform a black and white, porous and incomplete image into a colored, chemically coherent, and readable image.
 We will use the RDKit library to obtain the target images for our autoencoder. However, the available images and the target images are different. Indeed, some images are different and transformations (rotation, homothety) must be performed to go from one image to another.
@@ -194,7 +194,7 @@ Therefore, **images fed to the model must be a `Float` tensor of dimension `N, 1
 
 ### U-Net
 
-See `UNet` in [`models_AE.py`](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/blob/main/AutoEncoder/models_AE.py).
+See `UNet` in [`models_AE.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/models_AE.py).
 
 The U-Net network is simple – it's composed of `Down` and `Up` with `DoubleConv` operation.
 
@@ -202,7 +202,7 @@ The U-Net network is simple – it's composed of `Down` and `Up` with `DoubleCon
 
 Before you begin, make sure to save the required data files for training. To do this, run the contents of [`InChI_Label.py`](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/blob/main/InChI_Label.py).
 
-See [`Trainer_AE.py`](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/blob/main/AutoEncoder/Trainer_AE.py).
+See [`Trainer_AE.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/Trainer_AE.py).
 
 The parameters for the model (and training it) are in the **ini folder**, so you can easily check or modify them should you wish to.
 To obtain this parameters folder you can:
@@ -225,7 +225,7 @@ Note that this checkpoint should be [loaded directly with PyTorch](https://pytor
 
 # Inference
 
-See `Predict` in [`Trainer_AE.py`](https://github.com/AntoinePlissonneau/MolecularTranslationChallenge/blob/main/AutoEncoder/Trainer_AE.py).
+See `Predict` in [`Trainer_AE.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/Trainer_AE.py).
 
 To produce the result of a prediction, the method implemented in the Trainer class must be used. You can generate an image or generate a PyTorch tensor to reuse it in another process (here Attention Mechanism and YOLO).
 
