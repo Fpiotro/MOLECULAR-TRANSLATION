@@ -38,7 +38,7 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
 </p>
 
 <p align="center">
-  <b> This section was built with: <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-015-0068-4"> Heller, S.R., McNaught, A., Pletnev, I. et al. (2015), <i> InChI, the IUPAC International Chemical Identifier.</i> J Cheminform 7, 23 (2015). https://doi.org/10.1186/s13321-015-0068-4 </a>
+  <b> This section was built with: <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-015-0068-4"> Heller, S.R., McNaught, A., Pletnev, I. et al. <i>InChI, the IUPAC International Chemical Identifier.</i> J Cheminform 7, 23 (2015). https://doi.org/10.1186/s13321-015-0068-4 </a>
   </b>
 </p>
 
