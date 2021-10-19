@@ -12,7 +12,7 @@ This one is composed of three parts:
 
 These three parts were assembled in the final submission to provide an innovative and original solution 👍
 
-## Objectives:
+## Objectives
 * Automated recognition of optical chemical structures 
 * Convert images back to the underlying chemical structure (InChI text) 
 * Help chemists expand access to collective chemical research
