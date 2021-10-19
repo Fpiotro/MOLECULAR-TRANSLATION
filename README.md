@@ -42,6 +42,10 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
   </b>
 </p>
 
+## Model architecture
+
+
+
 ## Leaderboard
 
 <p align="center">
