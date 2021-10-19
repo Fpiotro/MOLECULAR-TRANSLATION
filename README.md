@@ -45,7 +45,7 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
 ## Model architecture
 
 <p align="center">
-  <img src="./img/Architecture.png">
+  <img src="./img/Architecture_0.png">
    <p align="center">
     Features of chemical structure in a hierarchical, layered manner. Major InChI layers: Main, Charge, Stereo, Isotopic, FixedH (never included in standard InChI) as well as the Reconnected layer (never included in standard InChI), and their associated sublayers.
   </p>
