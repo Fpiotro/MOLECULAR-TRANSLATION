@@ -54,7 +54,7 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
 </p>
 
 <p align="center">
-  <img src="./img/Architecture_01.png">
+  <img src="./img/Transfer_Learning.png">
    <p align="center">
     Illustration of the Transfer Learning part between the Initiator branch and the EncoderDecoder branch. The Initiator branch is voluntarily trained on a simplified problem in order to accustom the Resnet101 with images of molecules. Therefore, the Initiator branch is trained before the EncoderDecoder branch in order to extract the weights from the Resnet101 Backbone and load them on the Resnet101 Encoder of the EncoderDecoder branch.
   </p>
