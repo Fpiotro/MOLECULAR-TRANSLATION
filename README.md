@@ -15,19 +15,17 @@ These four parts were assembled in the final submission to provide an innovative
 
 ---
 
-# Contents
+## Contents
 
 [***Objectives***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/#objectives)
 
 [***Evaluation***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/#evaluation)
 
-[***Overview***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#overview)
+[***International Chemical Identifier Structure (InChI)***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#overview)
 
-[***Implementation***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#implementation)
+[***Model architecture***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#implementation)
 
-[***Training***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#training)
-
-[***Inference***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#inference)
+[***Leaderboard***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#training)
 
 ## Objectives
 * Automated recognition of optical chemical structures 
