@@ -21,9 +21,9 @@ These four parts were assembled in the final submission to provide an innovative
 
 [***Evaluation***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION#evaluation)
 
-[***International Chemical Identifier Structure (InChI)***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#overview)
+[***International Chemical Identifier Structure (InChI)***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION#international-chemical-identifier-structure-inchi)
 
-[***Model architecture***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/AutoEncoder#implementation)
+[***Model architecture***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION#model-architecture)
 
 [***Leaderboard***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION#leaderboard)
 
