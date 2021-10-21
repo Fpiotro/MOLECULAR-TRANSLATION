@@ -17,7 +17,7 @@ These four parts were assembled in the final submission to provide an innovative
 
 ## Contents
 
-[***Objectives***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/#objectives)
+[***Objectives***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/#objectives)
 
 [***Evaluation***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/tree/main/#evaluation)
 
