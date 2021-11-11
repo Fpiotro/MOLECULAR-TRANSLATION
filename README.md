@@ -79,3 +79,7 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
 </p>
 
 ---
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](./img/RDKIT_SMILES.png)  |  ![](./img/Mol_3D_1.png)
