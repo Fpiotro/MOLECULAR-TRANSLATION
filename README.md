@@ -92,6 +92,18 @@ Representing the molecule in three dimensions allows to understand the structure
 ![](./img/RDKIT_SMILES_2.png)  |  ![](./img/Mol_3D_2.png)
 ![](./img/RDKIT_SMILES_3.png)  |  ![](./img/Mol_3D_3.png)
 
-Moreover, you can use [PubChem](https://pubchem.ncbi.nlm.nih.gov/) to have a graphical representation of the molecule and its information online.
+Moreover, you can use [PubChem](https://pubchem.ncbi.nlm.nih.gov/).
+
+<p align="center">
+  <img src="./img/PubChem_1.png">
+</p>
+
+<p align="center">
+  <img src="./img/PubChem_2.png">
+</p>
+
+<p align="center">
+  <img src="./img/PubChem_3.png">
+</p>
 
 ---
