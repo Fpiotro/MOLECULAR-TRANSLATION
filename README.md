@@ -27,6 +27,8 @@ These four parts were assembled in the final submission to provide an innovative
 
 [***Leaderboard***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION#leaderboard)
 
+[***Extras***](https://github.com/Fpiotro/MOLECULAR-TRANSLATION#extras)
+
 ## Objectives
 * Automated recognition of optical chemical structures 
 * Convert images back to the underlying chemical structure (InChI text) 
@@ -78,10 +80,12 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
   <img src="./img/Score.png" width=50% height=50%>
 </p>
 
----
+## Extras
 
 2D Structure             |  3D Structure
 :-------------------------:|:-------------------------:
 ![](./img/RDKIT_SMILES.png)  |  ![](./img/Mol_3D_1.png)
 ![](./img/RDKIT_SMILES_2.png)  |  ![](./img/Mol_3D_2.png)
 ![](./img/RDKIT_SMILES_3.png)  |  ![](./img/Mol_3D_3.png)
+
+---
