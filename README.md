@@ -84,7 +84,7 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
 
 ### 2D and 3D representation of molecules
 
-Representing the molecule in three dimensions allows to understand the structure of the molecule, interactions between bonds and atoms. See [`Extras.ipynb`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/Extras.ipynb) (⚠ Notebook made with the Kaggle platform, package installations are different if you use Google Colab ⚠) to be able to plot molecules in 3D.
+Representing the molecule in three dimensions allows to understand the structure of the molecule, interactions between bonds and atoms. See [`Extras.ipynb`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/Extras.ipynb) (💥Notebook made with the Kaggle platform, package installations are different if you use Google Colab) to be able to plot molecules in 3D.
 
 2D Structure             |  3D Structure
 :-------------------------:|:-------------------------:
