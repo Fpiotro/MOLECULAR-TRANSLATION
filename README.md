@@ -82,6 +82,8 @@ InChI is a non-proprietary, Open Source, chemical identifier intended to be an I
 
 ## Extras
 
+### 2D and 3D representation of molecules
+
 2D Structure             |  3D Structure
 :-------------------------:|:-------------------------:
 ![](./img/RDKIT_SMILES.png)  |  ![](./img/Mol_3D_1.png)
