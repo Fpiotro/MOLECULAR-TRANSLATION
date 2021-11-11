@@ -95,15 +95,15 @@ Representing the molecule in three dimensions allows to understand the structure
 Moreover, you can use [PubChem](https://pubchem.ncbi.nlm.nih.gov/).
 
 <p align="center">
-  <img src="./img/PubChem_1.png">
+  <img src="./img/PubChem_1.png" width=50% height=50%>
 </p>
 
 <p align="center">
-  <img src="./img/PubChem_2.png">
+  <img src="./img/PubChem_2.png" width=50% height=50%>
 </p>
 
 <p align="center">
-  <img src="./img/PubChem_3.png">
+  <img src="./img/PubChem_3.png" width=50% height=50%>
 </p>
 
 ---
