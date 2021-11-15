@@ -18,8 +18,6 @@ warnings.filterwarnings('ignore')
 # ====================================================
 # Path
 # ====================================================
-
-# Path
 BASE_PATH = pathlib.Path(__file__).parent.resolve()
 INI_PATH = BASE_PATH.joinpath("ini").resolve()
 CHECK_PATH = BASE_PATH.joinpath("checkpoint").resolve()
