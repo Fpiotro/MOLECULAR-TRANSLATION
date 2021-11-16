@@ -20,7 +20,6 @@ warnings.filterwarnings('ignore')
 # ====================================================
 BASE_PATH = pathlib.Path(__file__).parent.resolve()
 INI_PATH = BASE_PATH.joinpath("ini").resolve()
-CHECK_PATH = BASE_PATH.joinpath("checkpoint").resolve()
 
 # ====================================================
 # params.ini
@@ -77,10 +76,11 @@ if __name__ == '__main__':
             'epochs_since_improvement': int(config['Training_parameters']['epochs_since_improvement']),
             'model_lr': float(config['Training_parameters']['model_lr']),
             'grad_clip': eval(config['Training_parameters']['grad_clip']),
+            'grad_clip_value': float(config['Training_parameters']['grad_clip_value']),
             'best_mse': float(config['Training_parameters']['best_mse']),
             'print_freq': int(config['Training_parameters']['print_freq']),
             'checkpoint': (config['Training_parameters']['checkpoint']=='True'),
-            'checkpoint_path': CHECK_PATH.joinpath(config['Training_parameters']['checkpoint_path'])
+            'checkpoint_path': config['Training_parameters']['checkpoint_path']
             }
 
     mol = Trainer(params)
