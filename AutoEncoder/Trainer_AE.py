@@ -22,7 +22,8 @@ cudnn.benchmark = True  # set to true only if inputs to model are fixed size; ot
 class Trainer:
 
     def __init__(self, params):
-        # Data parameters
+        
+        # Checkpoint parameters
         self.checkpoint_name = params['checkpoint_name']  # base name shared by checkpoint files
 
         # Training parameters
