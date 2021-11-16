@@ -200,7 +200,7 @@ The U-Net network is simple – it's composed of `Down` and `Up` with `DoubleCon
 
 # Training
 
-Before you begin, make sure to save the required data files for training. To do this, run the contents of [`InChI_Label.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/InChI_Label.py).
+Before you begin, make sure to save the required data files for training. To do this, run the contents of [`InChI_AE.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/InChI_AE.py).
 
 See [`Trainer_AE.py`](https://github.com/Fpiotro/MOLECULAR-TRANSLATION/blob/main/AutoEncoder/Trainer_AE.py).
 
@@ -209,7 +209,7 @@ To obtain this parameters folder you can:
 * Download it directly from the GitHub
 * Generate this folder with `python ini.py` in a python terminal (example: Anaconda Powershell Prompt)
 
-It is possible to leave a parameter empty (e.g. checkpoint path if no checkpoint is used). Nevertheless, it is essential to have the **ini folder and the 3 files** that make it up for the proper functioning of the program. Moreover, it is necessary to have a folder named **checkpoint** at the same level, even if it is empty.
+It is possible to leave a parameter empty (e.g. checkpoint path if no checkpoint is used). Nevertheless, it is essential to have the **ini folder and the file** that make it up for the proper functioning of the program.
 
 Note that we perform validation at the end of every training epoch.
 
