@@ -24,6 +24,9 @@ config.read(INI_PATH.joinpath("params.ini"))
 input_path = config['Data_parameters']['data_path_input']
 output_path = config['Data_parameters']['data_path_output']
 
+if not os.path.isdir(output_path + "data"):
+    os.mkdir(output_path + "data")
+
 # ====================================================
 # Data Loading
 # ====================================================
