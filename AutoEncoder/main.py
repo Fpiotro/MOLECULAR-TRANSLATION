@@ -31,13 +31,15 @@ debug = (config['Main_parameters']['debug'] == 'True')
 random_seed = int(config['Main_parameters']['random_seed'])
 batch_size = int(config['Main_parameters']['batch_size'])
 
+output_path = config['Data_parameters']['data_path_output']
+
 # ====================================================
 # Main
 # ====================================================
 if __name__ == '__main__':
 
     # Train Data
-    train = pd.read_pickle(r"F:\bms-molecular-translation\train_labels_p.pkl")
+    train = pd.read_pickle(r"{}/train_labels_p.pkl".format(output_path))
 
     # Random seed
     seed_torch(seed=random_seed)
