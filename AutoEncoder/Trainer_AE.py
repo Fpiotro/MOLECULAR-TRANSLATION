@@ -66,9 +66,9 @@ class Trainer:
             self.model_optimizer = checkpoint['model_optimizer']
             self.model_scheduler = checkpoint['model_scheduler']
 
-        # Learning rate
-        for g in self.model_optimizer.param_groups:
-            g['lr'] = self.model_lr
+            # If you want to change the learning rate of the checkpoint
+            #for g in self.model_optimizer.param_groups:
+                #g['lr'] = self.model_lr
             
         # Move to GPU, if available
         self.model = self.model.to(device)
