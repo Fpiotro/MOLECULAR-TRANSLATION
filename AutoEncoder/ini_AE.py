@@ -3,12 +3,16 @@
 # ====================================================
 from configparser import ConfigParser
 import pathlib
+import os
 
 # ====================================================
 # Path
 # ====================================================
 BASE_PATH = pathlib.Path(__file__).parent.resolve()
 INI_PATH = BASE_PATH.joinpath("ini").resolve()
+
+if not os.path.isdir(INI_PATH):
+    os.mkdir(INI_PATH)
 
 # ====================================================
 # Ini
