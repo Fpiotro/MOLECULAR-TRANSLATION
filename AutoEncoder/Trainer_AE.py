@@ -71,6 +71,7 @@ class Trainer:
         # Loss function
         self.criterion = nn.MSELoss().to(device)
 
+        
     def train_val_model(self, train_loader, val_loader):
 
         """
@@ -81,8 +82,7 @@ class Trainer:
 
         # Epochs
         for epoch in range(self.start_epoch, self.epochs):
-
-            # Decay learning rate if there is no improvement for 8 consecutive epochs, and terminate training after 20
+            
             if self.epochs_since_improvement == 20:
                 break
 
@@ -95,8 +95,8 @@ class Trainer:
             self.model_scheduler.step()
 
             # Check if there was an improvement
-            is_best = recent_mse > self.best_mse
-            self.best_mse = max(recent_mse, self.best_mse)
+            is_best = recent_mse < self.best_mse
+            self.best_mse = min(recent_mse, self.best_mse)
             if not is_best:
                 self.epochs_since_improvement += 1
                 print("\nEpochs since last improvement: %d\n" % (self.epochs_since_improvement,))
@@ -163,11 +163,7 @@ class Trainer:
                     'Data Load Time {data_time.val:.3f} ({data_time.avg:.3f})\t'
                     'Loss {loss.val:.6f} ({loss.avg:.4f})\t'.format(epoch, i, len(train_loader), batch_time=batch_time,                                                                          data_time=data_time, loss=losses))
 
-            #Checkpoint
-            if i % 2000 ==0:
-              save_checkpoint(self.data_name, epoch, self.epochs_since_improvement, self.model, self.model_optimizer, self.model_scheduler)
-              print('\n Model saved \n')
-
+                
     def val_model(self, val_loader):
 
         """
