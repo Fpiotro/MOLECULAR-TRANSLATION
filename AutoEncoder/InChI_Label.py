@@ -6,7 +6,6 @@ import re
 import numpy as np
 import pandas as pd
 import sys
-sys.path.append('F://bms-molecular-translation')
 from utils_InChI import save_obj
 from tqdm.auto import tqdm
 tqdm.pandas()
