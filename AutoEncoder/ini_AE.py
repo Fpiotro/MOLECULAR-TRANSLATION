@@ -35,12 +35,13 @@ config['Training_parameters'] = {}
 config['Training_parameters']['start_epoch'] = '0'
 config['Training_parameters']['epochs'] = '10'
 config['Training_parameters']['epochs_since_improvement'] = '0'
-config['Training_parameters']['model_lr'] = '5e-5'
+config['Training_parameters']['model_lr'] = '1e-4'
 config['Training_parameters']['grad_clip'] = 'False'
-config['Training_parameters']['best_mse'] = '1000'
-config['Training_parameters']['print_freq'] = '1'
+config['Training_parameters']['grad_clip_value'] = ''
+config['Training_parameters']['best_mse'] = '100'
+config['Training_parameters']['print_freq'] = '10'
 config['Training_parameters']['checkpoint'] = 'False'
-config['Training_parameters']['checkpoint_path'] = './checkpoint/checkpoint_AE_2021.pth.tar'
+config['Training_parameters']['checkpoint_path'] = ''
 
 config['Main_parameters'] = {}
 config['Main_parameters']['debug'] = 'False'
