@@ -23,7 +23,7 @@ class Trainer:
 
     def __init__(self, params):
         # Data parameters
-        self.data_name = params['data_name']  # base name shared by checkpoint files
+        self.checkpoint_name = params['checkpoint_name']  # base name shared by checkpoint files
 
         # Training parameters
         self.epochs = params['epochs']  # number of epochs to train for (if early stopping is not triggered)
@@ -109,7 +109,7 @@ class Trainer:
                 self.epochs_since_improvement = 0
 
             # Save checkpoint
-            save_checkpoint(self.data_name, epoch, self.epochs_since_improvement, self.model, self.model_optimizer, self.model_scheduler, recent_mse, is_best)
+            save_checkpoint(self.checkpoint_name, epoch, self.epochs_since_improvement, self.model, self.model_optimizer, self.model_scheduler, recent_mse, is_best)
 
 
     def train_model(self, train_loader, epoch):
