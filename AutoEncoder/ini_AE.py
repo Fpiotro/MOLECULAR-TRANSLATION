@@ -56,9 +56,16 @@ config['Training_parameters']['checkpoint'] = 'False'
 config['Training_parameters']['checkpoint_path'] = ''
 
 config['Main_parameters'] = {}
+
+# Configuration
 config['Main_parameters']['debug'] = 'False'
 config['Main_parameters']['random_seed'] = '42'
+
+# DataLoader
 config['Main_parameters']['batch_size'] = '32'
+config['Main_parameters']['shuffle'] = 'True'
+config['Main_parameters']['pin_memory'] = 'True'
+config['Main_parameters']['drop_last'] = 'False'
 
 with open(INI_PATH.joinpath("params.ini"), 'w') as configfile:
     config.write(configfile)
