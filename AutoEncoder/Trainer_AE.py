@@ -49,7 +49,7 @@ class Trainer:
             self.model = UNet(n_channels, output_dim)
             self.model_optimizer = torch.optim.Adam(self.model.parameters(), lr = self.model_lr)
 
-            # Model parameters
+            # Scheduler parameters
             step_size_scheduler = params['step_size_scheduler']
             gamma_scheduler = params['gamma_scheduler']
             
