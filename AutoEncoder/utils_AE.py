@@ -63,24 +63,7 @@ def save_checkpoint(data_name, epoch, epochs_since_improvement, model, model_opt
     # If this checkpoint is the best so far, store a copy so it doesn't get overwritten by a worse checkpoint
     if is_best:
         torch.save(state, directory + 'BEST_' + filename)
-
-# def save_obj(obj, name):
-#     """
-#     Saves object with pickle.
-#     :param obj: object to be saved
-#     :param name: name of object in the depository
-#     """
-#     with open('./'+ name + '.pkl', 'wb') as f:
-#         pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
-#
-# def load_obj(name):
-#     """
-#     Loads object with pickle.
-#     :param name: name of object to be loaded
-#     """
-#     with open('./'+ name + '.pkl', 'rb') as f:
-#         return pickle.load(f)
-
+        
 # read International Chemical Identifier
 def draw_mol(fb, size1, size2):
     """
