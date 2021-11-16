@@ -29,7 +29,7 @@ INI_PATH = BASE_PATH.joinpath("ini").resolve()
 # preprocessing.ini
 # ====================================================
 config = ConfigParser()
-config.read(INI_PATH.joinpath("preprocessing.ini"))
+config.read(INI_PATH.joinpath("params.ini"))
 size = int(config['Preprocessing_parameters']['size_image'])
 
 # ====================================================
