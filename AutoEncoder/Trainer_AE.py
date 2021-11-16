@@ -23,12 +23,13 @@ class Trainer:
 
     def __init__(self, params):
         # Data parameters
-        self.data_name = params['data_name']  # base name shared by data files
+        self.data_name = params['data_name']  # base name shared by checkpoint files
 
         # Training parameters
         self.epochs = params['epochs']  # number of epochs to train for (if early stopping is not triggered)
         self.model_lr = params['model_lr']  # learning rate for model
         self.grad_clip = params['grad_clip']  # clip gradients at an absolute value
+        self.grad_clip_value = params['grad_clip_value']  # clip gradients at an absolute value
         self.print_freq = params['print_freq']  # print training/validation stats every __ batches
         checkpoint = params['checkpoint'] # path to checkpoint, None if none
 
@@ -46,7 +47,7 @@ class Trainer:
             self.best_mse = params['best_mse']  # MSE score right now
 
             self.model = UNet(n_channels, output_dim)
-            self.model_optimizer = torch.optim.Adam(self.model.parameters(),lr = self.model_lr)
+            self.model_optimizer = torch.optim.Adam(self.model.parameters(), lr = self.model_lr)
 
             # Scheduler for learning rate
             self.model_scheduler = torch.optim.lr_scheduler.StepLR(self.model_optimizer, step_size=7, gamma=0.1)
