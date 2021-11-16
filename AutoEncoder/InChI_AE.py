@@ -42,9 +42,6 @@ def get_train_file_path(image_id):
 # main
 # ====================================================
 def main():
-    # ====================================================
-    # preprocess train.csv
-    # ====================================================
     df['file_path'] = df['image_id'].progress_apply(get_train_file_path)
     df.to_pickle("{}/data/train_labels_p.pkl".format(output_path))
     sys.stderr.write('Data saved')
