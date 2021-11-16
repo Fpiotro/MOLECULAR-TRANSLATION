@@ -26,7 +26,7 @@ BASE_PATH = pathlib.Path(__file__).parent.resolve()
 INI_PATH = BASE_PATH.joinpath("ini").resolve()
 
 # ====================================================
-# preprocessing.ini
+# params.ini
 # ====================================================
 config = ConfigParser()
 config.read(INI_PATH.joinpath("params.ini"))
