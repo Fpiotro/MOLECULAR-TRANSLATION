@@ -21,8 +21,6 @@ import pathlib
 # ====================================================
 # Path
 # ====================================================
-
-# Path
 BASE_PATH = pathlib.Path(__file__).parent.resolve()
 CHECK_PATH = BASE_PATH.joinpath("checkpoint").resolve()
 
