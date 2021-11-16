@@ -59,8 +59,8 @@ if __name__ == '__main__':
         val.reset_index(drop=True)
 
     # Dataset
-    train_dataset = TrainDataset(train,transform=get_transforms(data='train'))
-    val_dataset = TrainDataset(val,transform=get_transforms(data='train'))
+    train_dataset = TrainDataset(train, transform=get_transforms(data='train'))
+    val_dataset = ValDataset(val, transform=get_transforms(data='valid'))
 
     train_loader = DataLoader(train_dataset,
                               batch_size=batch_size,
