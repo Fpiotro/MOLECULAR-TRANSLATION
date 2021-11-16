@@ -68,8 +68,7 @@ if __name__ == '__main__':
                             pin_memory=True)
 
     # general parameters
-    params = {'data_name': config['Data_parameters']['data_name'],
-            'n_channels': int(config['Model_parameters']['n_channels']),
+    params = {'n_channels': int(config['Model_parameters']['n_channels']),
             'output_dim': int(config['Model_parameters']['output_dim']),
             'start_epoch': int(config['Training_parameters']['start_epoch']),
             'epochs': int(config['Training_parameters']['epochs']),
@@ -81,6 +80,7 @@ if __name__ == '__main__':
             'gamma_scheduler' : float(config['Training_parameters']['gamma_scheduler']),
             'best_mse': float(config['Training_parameters']['best_mse']),
             'print_freq': int(config['Training_parameters']['print_freq']),
+            'checkpoint_name': config['Training_parameters']['checkpoint_name'],
             'checkpoint': (config['Training_parameters']['checkpoint']=='True'),
             'checkpoint_path': config['Training_parameters']['checkpoint_path']
             }
