@@ -22,7 +22,22 @@ import pathlib
 # Path
 # ====================================================
 BASE_PATH = pathlib.Path(__file__).parent.resolve()
-CHECK_PATH = BASE_PATH.joinpath("checkpoint").resolve()
+INI_PATH = BASE_PATH.joinpath("ini").resolve()
+
+# ====================================================
+# params.ini
+# ====================================================
+config = ConfigParser()
+config.read(INI_PATH.joinpath("params.ini"))
+output_path = config['Data_parameters']['data_path_output']
+
+# ====================================================
+# Path
+# ====================================================
+CHECK_PATH = pathlib.Path(output_path).joinpath("checkpoint").resolve()
+
+if not os.path.isdir(CHECK_PATH):
+    os.mkdir(CHECK_PATH)
 
 # ====================================================
 # Utils
