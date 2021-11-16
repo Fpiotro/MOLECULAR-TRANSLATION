@@ -26,11 +26,16 @@ INI_PATH = BASE_PATH.joinpath("ini").resolve()
 # ====================================================
 config = ConfigParser()
 config.read(INI_PATH.joinpath("params.ini"))
-debug = (config['Main_parameters']['debug'] == 'True')
-random_seed = int(config['Main_parameters']['random_seed'])
-batch_size = int(config['Main_parameters']['batch_size'])
 
 output_path = config['Data_parameters']['data_path_output']
+
+debug = (config['Main_parameters']['debug'] == 'True')
+random_seed = int(config['Main_parameters']['random_seed'])
+
+batch_size = int(config['Main_parameters']['batch_size'])
+shuffle = eval(config['Main_parameters']['shuffle'])
+pin_memory = eval(config['Main_parameters']['pin_memory'])
+drop_last = eval(config['Main_parameters']['drop_last'])
 
 # ====================================================
 # Main
@@ -59,13 +64,15 @@ if __name__ == '__main__':
 
     train_loader = DataLoader(train_dataset,
                               batch_size=batch_size,
-                              shuffle=True,
-                              pin_memory=True)
+                              shuffle=shuffle,
+                              pin_memory=pin_memory,
+                              drop_last=drop_last)
 
     val_loader = DataLoader(val_dataset,
                             batch_size=batch_size,
-                            shuffle=True,
-                            pin_memory=True)
+                            shuffle=shuffle,
+                            pin_memory=pin_memory,
+                            drop_last=drop_last)
 
     # general parameters
     params = {'n_channels': int(config['Model_parameters']['n_channels']),
