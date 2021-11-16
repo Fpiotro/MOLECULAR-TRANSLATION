@@ -23,10 +23,10 @@ INI_PATH = BASE_PATH.joinpath("ini").resolve()
 CHECK_PATH = BASE_PATH.joinpath("checkpoint").resolve()
 
 # ====================================================
-# preprocessing.ini
+# params.ini
 # ====================================================
 config = ConfigParser()
-config.read(INI_PATH.joinpath("main.ini"))
+config.read(INI_PATH.joinpath("params.ini"))
 debug = (config['Main_parameters']['debug'] == 'True')
 random_seed = int(config['Main_parameters']['random_seed'])
 batch_size = int(config['Main_parameters']['batch_size'])
@@ -65,9 +65,6 @@ if __name__ == '__main__':
                             batch_size=batch_size,
                             shuffle=True,
                             pin_memory=True)
-
-    config = ConfigParser()
-    config.read(INI_PATH.joinpath("params.ini"))
 
     # general parameters
     params = {'data_name': config['Data_parameters']['data_name'],
