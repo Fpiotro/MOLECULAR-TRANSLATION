@@ -77,6 +77,8 @@ if __name__ == '__main__':
             'model_lr': float(config['Training_parameters']['model_lr']),
             'grad_clip': eval(config['Training_parameters']['grad_clip']),
             'grad_clip_value': float(config['Training_parameters']['grad_clip_value']),
+            'step_size_scheduler' : int(config['Training_parameters']['step_size_scheduler']),
+            'gamma_scheduler' : float(config['Training_parameters']['gamma_scheduler']),
             'best_mse': float(config['Training_parameters']['best_mse']),
             'print_freq': int(config['Training_parameters']['print_freq']),
             'checkpoint': (config['Training_parameters']['checkpoint']=='True'),
