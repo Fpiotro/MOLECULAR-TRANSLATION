@@ -7,6 +7,7 @@ import os
 import torch
 import matplotlib.pyplot as plt
 import pickle
+import rdkit
 from rdkit import Chem
 from rdkit.Chem import AllChem, Draw
 from rdkit.Chem.Draw import rdMolDraw2D
