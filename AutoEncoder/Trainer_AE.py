@@ -49,8 +49,12 @@ class Trainer:
             self.model = UNet(n_channels, output_dim)
             self.model_optimizer = torch.optim.Adam(self.model.parameters(), lr = self.model_lr)
 
+            # Model parameters
+            step_size_scheduler = params['step_size_scheduler']
+            gamma_scheduler = params['gamma_scheduler']
+            
             # Scheduler for learning rate
-            self.model_scheduler = torch.optim.lr_scheduler.StepLR(self.model_optimizer, step_size=7, gamma=0.1)
+            self.model_scheduler = torch.optim.lr_scheduler.StepLR(self.model_optimizer, step_size=step_size_scheduler, gamma=gamma_scheduler)
 
         else:
             checkpoint_path = params['checkpoint_path']
