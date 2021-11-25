@@ -112,4 +112,6 @@ You can use [PubChem](https://pubchem.ncbi.nlm.nih.gov/).
   <img src="./img/PubChem_3.png" width=60% height=60%>
 </p>
 
+![Visualization of the codebase](./diagram.svg)
+
 ---
