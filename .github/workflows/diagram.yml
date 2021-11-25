@@ -11,7 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@master
       - name: Update diagram
-        uses: githubocto/repo-visualizer@main@main
+        uses: githubocto/repo-visualizer@main
         with:
           output_file: "img/diagram.svg"
           excluded_paths: ".github"
